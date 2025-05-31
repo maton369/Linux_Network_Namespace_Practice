@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  modernlinux:
+    build: .
+    container_name: linux-network-namespace
+    privileged: true
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./scripts:/scripts
+    command: bash   # ← 起動時に bash プロンプトで待機するだけ
