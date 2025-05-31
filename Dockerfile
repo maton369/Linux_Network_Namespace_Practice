@@ -21,5 +21,4 @@ RUN apt-get update && apt-get install -y \
     isc-dhcp-client \
     && apt-get clean
 
-# 作業ディレクトリを scripts に
 WORKDIR /scripts

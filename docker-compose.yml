@@ -9,4 +9,4 @@ services:
     tty: true
     volumes:
       - ./scripts:/scripts
-    command: bash   # ← 起動時に bash プロンプトで待機するだけ
+    command: bash   
