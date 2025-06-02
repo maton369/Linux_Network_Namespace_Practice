@@ -1,3 +1,4 @@
 #!/bin/bash
 
-traceroute  -n 8.8.8.8 | tee output.log
+#ip netns add helloworld | tee output.log
+ip netns list | tee output.log
