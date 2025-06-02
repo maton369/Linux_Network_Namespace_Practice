@@ -61,5 +61,7 @@
 # ip netns exec router ip addr show gw-veth1 | tee -a output.log
 # ip netns exec ns2 ip addr show ns2-veth0 | tee -a output.log
 
-ip netns exec ns1 ping -c 3 192.0.2.254 -I 192.0.2.1 | tee output.log
-ip netns exec ns2 ping -c 3 198.51.100.254 -I 198.51.100.1 | tee -a output.log
+# ip netns exec ns1 ping -c 3 192.0.2.254 -I 192.0.2.1 | tee output.log
+# ip netns exec ns2 ping -c 3 198.51.100.254 -I 198.51.100.1 | tee -a output.log
+
+ip netns exec ns1 ping -c 3 198.51.100.1 -I 192.0.2.1 | tee output.log

@@ -1,16 +1,5 @@
-PING 192.0.2.254 (192.0.2.254) from 192.0.2.1 : 56(84) bytes of data.
-64 bytes from 192.0.2.254: icmp_seq=1 ttl=64 time=0.102 ms
-64 bytes from 192.0.2.254: icmp_seq=2 ttl=64 time=0.104 ms
-64 bytes from 192.0.2.254: icmp_seq=3 ttl=64 time=0.102 ms
+PING 198.51.100.1 (198.51.100.1) from 192.0.2.1 : 56(84) bytes of data.
 
---- 192.0.2.254 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2088ms
-rtt min/avg/max/mdev = 0.102/0.102/0.104/0.000 ms
-PING 198.51.100.254 (198.51.100.254) from 198.51.100.1 : 56(84) bytes of data.
-64 bytes from 198.51.100.254: icmp_seq=1 ttl=64 time=0.077 ms
-64 bytes from 198.51.100.254: icmp_seq=2 ttl=64 time=0.100 ms
-64 bytes from 198.51.100.254: icmp_seq=3 ttl=64 time=0.082 ms
+--- 198.51.100.1 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2079ms
 
---- 198.51.100.254 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2038ms
-rtt min/avg/max/mdev = 0.077/0.086/0.100/0.009 ms
