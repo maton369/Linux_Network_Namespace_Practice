@@ -24,4 +24,9 @@
 # ip netns exec ns1 ping -c 3 192.0.2.2 | tee output.log
 # ip netns exec ns2 ping -c 3 192.0.2.1 | tee -a output.log
 
-ip --all netns delete
+# ip --all netns delete
+
+
+ip netns add ns1
+ip netns add router
+ip netns add ns2
