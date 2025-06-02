@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ping -c 3 127.0.0.1 | tee output.log
+traceroute  -n 8.8.8.8 | tee output.log
