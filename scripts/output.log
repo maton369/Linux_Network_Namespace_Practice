@@ -1,4 +1,24 @@
-15: ns1-veth0@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
-14: gw-veth0@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
-16: gw-veth1@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
-17: ns2-veth0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+15: ns1-veth0@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 9e:74:f4:f8:3d:8f brd ff:ff:ff:ff:ff:ff link-netns router
+    inet 192.0.2.1/24 scope global ns1-veth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::9c74:f4ff:fef8:3d8f/64 scope link 
+       valid_lft forever preferred_lft forever
+14: gw-veth0@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 3a:14:69:9f:ac:7c brd ff:ff:ff:ff:ff:ff link-netns ns1
+    inet 192.0.2.254/24 scope global gw-veth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::3814:69ff:fe9f:ac7c/64 scope link 
+       valid_lft forever preferred_lft forever
+16: gw-veth1@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 96:f8:a7:1d:1b:d5 brd ff:ff:ff:ff:ff:ff link-netns ns2
+    inet 198.51.100.254/24 scope global gw-veth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::94f8:a7ff:fe1d:1bd5/64 scope link 
+       valid_lft forever preferred_lft forever
+17: ns2-veth0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether ca:cb:4e:61:3a:45 brd ff:ff:ff:ff:ff:ff link-netns router
+    inet 198.51.100.1/24 scope global ns2-veth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::c8cb:4eff:fe61:3a45/64 scope link 
+       valid_lft forever preferred_lft forever
