@@ -114,4 +114,8 @@
 # ip netns exec ns2 ip address add 198.51.100.1/24 dev ns2-veth0
 # ip netns exec ns1 ip addr show ns1-veth0 | tee output.log
 
-ip netns exec ns1 ping -c 3 198.51.100.1 -I 192.0.2.1 | tee output.log
+# ip netns exec ns1 ping -c 3 198.51.100.1 -I 192.0.2.1 | tee output.log
+
+ip netns exec router1 ip route add 198.51.100.0/24 via 203.0.113.1
+ip netns exec router2 ip route add 192.0.2.0/24 via 203.0.113.1
+ip netns exec router1 ip route show | tee output.log
