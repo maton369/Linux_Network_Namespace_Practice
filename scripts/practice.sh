@@ -74,4 +74,7 @@
 # ip netns exec ns2 ip route add default via 198.51.100.254
 # ip netns exec ns2 ip route show | tee output.log
 
-ip netns exec ns1 ping -c 3 198.51.100.1 -I 192.0.2.1 | tee output.log
+# ip netns exec ns1 ping -c 3 198.51.100.1 -I 192.0.2.1 | tee output.log
+
+ip --all netns delete
+ip netns list | tee output.log
