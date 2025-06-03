@@ -68,5 +68,8 @@
 
 # ip netns exec ns1 ip route show | tee output.log
 
-ip netns exec ns1 ip route add default via 192.0.2.254
-ip netns exec ns1 ip route show | tee output.log
+# ip netns exec ns1 ip route add default via 192.0.2.254
+# ip netns exec ns1 ip route show | tee output.log
+
+ip netns exec ns2 ip route add default via 198.51.100.254
+ip netns exec ns2 ip route show | tee output.log

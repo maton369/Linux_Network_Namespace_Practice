@@ -1,2 +1,2 @@
-default via 192.0.2.254 dev ns1-veth0 
-192.0.2.0/24 dev ns1-veth0 proto kernel scope link src 192.0.2.1 
+default via 198.51.100.254 dev ns2-veth0 
+198.51.100.0/24 dev ns2-veth0 proto kernel scope link src 198.51.100.1 
