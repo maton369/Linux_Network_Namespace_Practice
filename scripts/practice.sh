@@ -90,10 +90,18 @@
 # ip link add gw2-veth1 type veth peer name ns2-veth0
 # ip link show | grep veth | tee output.log
 
-ip link set ns1-veth0 netns ns1
-ip link set gw1-veth0 netns router1
-ip link set gw1-veth1 netns router1
-ip link set gw2-veth0 netns router2
-ip link set gw2-veth1 netns router2
-ip link set ns2-veth0 netns ns2
-ip netns exec ns1 ip link show | tee output.log
+# ip link set ns1-veth0 netns ns1
+# ip link set gw1-veth0 netns router1
+# ip link set gw1-veth1 netns router1
+# ip link set gw2-veth0 netns router2
+# ip link set gw2-veth1 netns router2
+# ip link set ns2-veth0 netns ns2
+# ip netns exec ns1 ip link show | tee output.log
+
+ip netns exec ns1 ip link set ns1-veth0 up
+ip netns exec router1 ip link set gw1-veth0 up
+ip netns exec router1 ip link set gw1-veth1 up
+ip netns exec router2 ip link set gw2-veth0 up
+ip netns exec router2 ip link set gw2-veth1 up
+ip netns exec ns2 ip link set ns2-veth0 up
+ip netns exec ns1 ip link show ns1-veth0 | grep state | tee output.log
