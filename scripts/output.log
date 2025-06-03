@@ -1,6 +1,5 @@
-17: ns1-veth0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 0e:06:aa:66:c3:bb brd ff:ff:ff:ff:ff:ff link-netns router1
-    inet 192.0.2.1/24 scope global ns1-veth0
-       valid_lft forever preferred_lft forever
-    inet6 fe80::c06:aaff:fe66:c3bb/64 scope link 
-       valid_lft forever preferred_lft forever
+PING 198.51.100.1 (198.51.100.1) from 192.0.2.1 : 56(84) bytes of data.
+
+--- 198.51.100.1 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2044ms
+
