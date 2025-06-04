@@ -1,1 +1,2 @@
-29: ns1-veth0@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 00:00:5e:00:53:01 brd ff:ff:ff:ff:ff:ff link-netns ns2
+    link/ether 00:00:5e:00:53:02 brd ff:ff:ff:ff:ff:ff link-netns ns1
