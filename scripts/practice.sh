@@ -48,4 +48,6 @@
 
 # ip netns exec ns1 ping -c 3 198.51.100.1 -I192.0.2.1 | tee output.log
 
-ip netns exec ns1 ip route show | tee output.log
+# ip netns exec ns1 ip route show | tee output.log
+
+ip --all netns delete
