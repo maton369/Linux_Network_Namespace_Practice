@@ -24,4 +24,7 @@
 # ip netns exec ns1 ip link show dev ns1-veth0 | grep ether | tee output.log
 # ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
 
-ip netns exec ns1 ping -c 3 192.0.2.2 -I 192.0.2.1 | tee output.log
+# ip netns exec ns1 ping -c 3 192.0.2.2 -I 192.0.2.1 | tee output.log
+
+ip netns exec ns1 ip neigh flush all
+ip netns exec ns1 ip neigh show | tee output.log
