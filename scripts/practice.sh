@@ -46,4 +46,6 @@
 # ip netns exec router ip link show dev gw-veth1 | grep ether | tee -a output.log
 # ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
 
-ip netns exec ns1 ping -c 3 198.51.100.1 -I192.0.2.1 | tee output.log
+# ip netns exec ns1 ping -c 3 198.51.100.1 -I192.0.2.1 | tee output.log
+
+ip netns exec ns1 ip route show | tee output.log
