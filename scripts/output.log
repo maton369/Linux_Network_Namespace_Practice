@@ -1,4 +1,4 @@
-default via 192.0.2.254 dev ns1-veth0 
-192.0.2.0/24 dev ns1-veth0 proto kernel scope link src 192.0.2.1 
-default via 198.51.100.254 dev ns2-veth0 
-198.51.100.0/24 dev ns2-veth0 proto kernel scope link src 198.51.100.1 
+    link/ether 00:00:5e:00:53:11 brd ff:ff:ff:ff:ff:ff link-netns router
+    link/ether 00:00:5e:00:53:12 brd ff:ff:ff:ff:ff:ff link-netns ns1
+    link/ether 7e:48:95:3e:4f:05 brd ff:ff:ff:ff:ff:ff link-netns ns2
+    link/ether 00:00:5e:00:53:22 brd ff:ff:ff:ff:ff:ff link-netns router
