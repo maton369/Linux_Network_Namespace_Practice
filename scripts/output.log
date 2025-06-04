@@ -1,4 +1,8 @@
-    link/ether 00:00:5e:00:53:11 brd ff:ff:ff:ff:ff:ff link-netns router
-    link/ether 00:00:5e:00:53:12 brd ff:ff:ff:ff:ff:ff link-netns ns1
-    link/ether 7e:48:95:3e:4f:05 brd ff:ff:ff:ff:ff:ff link-netns ns2
-    link/ether 00:00:5e:00:53:22 brd ff:ff:ff:ff:ff:ff link-netns router
+PING 198.51.100.1 (198.51.100.1) from 192.0.2.1 : 56(84) bytes of data.
+64 bytes from 198.51.100.1: icmp_seq=1 ttl=63 time=0.560 ms
+64 bytes from 198.51.100.1: icmp_seq=2 ttl=63 time=0.185 ms
+64 bytes from 198.51.100.1: icmp_seq=3 ttl=63 time=0.100 ms
+
+--- 198.51.100.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2046ms
+rtt min/avg/max/mdev = 0.100/0.281/0.560/0.199 ms

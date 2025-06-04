@@ -37,11 +37,13 @@
 # ip netns exec ns1 ip route show | tee output.log
 # ip netns exec ns2 ip route show | tee -a output.log
 
-ip netns exec ns1 ip link set ns1-veth0 address 00:00:5E:00:53:11
-ip netns exec router ip link set gw-veth0 address 00:00:5E:00:53:12
-ip netns ex ec router ip link set gw-veth1 address 00:00:5E:00:53:21
-ip netns exec ns2 ip link set ns2-veth0 address 00:00:5E:00:53:22
-ip netns exec ns1 ip link show dev ns1-veth0 | grep ether | tee output.log
-ip netns exec router ip link show dev gw-veth0 | grep ether | tee -a output.log
-ip netns exec router ip link show dev gw-veth1 | grep ether | tee -a output.log
-ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
+# ip netns exec ns1 ip link set ns1-veth0 address 00:00:5E:00:53:11
+# ip netns exec router ip link set gw-veth0 address 00:00:5E:00:53:12
+# ip netns ex ec router ip link set gw-veth1 address 00:00:5E:00:53:21
+# ip netns exec ns2 ip link set ns2-veth0 address 00:00:5E:00:53:22
+# ip netns exec ns1 ip link show dev ns1-veth0 | grep ether | tee output.log
+# ip netns exec router ip link show dev gw-veth0 | grep ether | tee -a output.log
+# ip netns exec router ip link show dev gw-veth1 | grep ether | tee -a output.log
+# ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
+
+ip netns exec ns1 ping -c 3 198.51.100.1 -I192.0.2.1 | tee output.log
