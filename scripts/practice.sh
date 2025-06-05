@@ -12,6 +12,9 @@
 
 # ip --all netns delete
 
-ip netns add server
-ip netns add client
-ip netns show | tee output.log
+# ip netns add server
+# ip netns add client
+# ip netns show | tee output.log
+
+ip link add s-veth0 type veth peer name c-veth0
+ip link show | grep veth | tee output.log
