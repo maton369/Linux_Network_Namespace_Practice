@@ -6,4 +6,6 @@
 
 # ping -c 3 localhost | tee output.log
 
-grep 127.0.0.1 /etc/hosts | tee output.log
+# grep 127.0.0.1 /etc/hosts | tee output.log
+
+dig +short @8.8.8.8 example.org A | tee output.log

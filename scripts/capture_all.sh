@@ -10,4 +10,6 @@
 
 # tcpdump -i lo -tnlA "udp and port 54321" | tee tcpdump.log
 
-tcpdump -i lo -tnlA "tcp and port 54321" | tee tcpdump.log
+# tcpdump -i lo -tnlA "tcp and port 54321" | tee tcpdump.log
+
+tcpdump -tnl -i any "udp and port 53" | tee tcpdump.log
