@@ -41,6 +41,11 @@
 # ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
 # ip netns exec ns3 ip link show dev ns3-veth0 | grep ether | tee -a output.log
 
-ip netns exec bridge ip link add br0 type bridge
-ip netns exec bridge ip link set br0 up
-ip netns exec bridge ip link show | grep br0 | tee output.log
+# ip netns exec bridge ip link add br0 type bridge
+# ip netns exec bridge ip link set br0 up
+# ip netns exec bridge ip link show | grep br0 | tee output.log
+
+ip netns exec bridge ip link set ns1-br0 master br0
+ip netns exec bridge ip link set ns2-br0 master br0
+ip netns exec bridge ip link set ns3-br0 master br0
+ip netns exec bridge ip link show | grep master | tee output.log
