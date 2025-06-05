@@ -34,9 +34,13 @@
 # ip netns exec ns2 ip link show ns2-veth0 | grep state | tee -a output.log
 # ip netns exec ns3 ip link show ns3-veth0 | grep state | tee -a output.log
 
-ip netns exec ns1 ip link set ns1-veth0 address 00:00:5E:00:53:01
-ip netns exec ns2 ip link set ns2-veth0 address 00:00:5E:00:53:02
-ip netns exec ns3 ip link set ns3-veth0 address 00:00:5E:00:53:03
-ip netns exec ns1 ip link show dev ns1-veth0 | grep ether | tee output.log
-ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
-ip netns exec ns3 ip link show dev ns3-veth0 | grep ether | tee -a output.log
+# ip netns exec ns1 ip link set ns1-veth0 address 00:00:5E:00:53:01
+# ip netns exec ns2 ip link set ns2-veth0 address 00:00:5E:00:53:02
+# ip netns exec ns3 ip link set ns3-veth0 address 00:00:5E:00:53:03
+# ip netns exec ns1 ip link show dev ns1-veth0 | grep ether | tee output.log
+# ip netns exec ns2 ip link show dev ns2-veth0 | grep ether | tee -a output.log
+# ip netns exec ns3 ip link show dev ns3-veth0 | grep ether | tee -a output.log
+
+ip netns exec bridge ip link add br0 type bridge
+ip netns exec bridge ip link set br0 up
+ip netns exec bridge ip link show | grep br0 | tee output.log

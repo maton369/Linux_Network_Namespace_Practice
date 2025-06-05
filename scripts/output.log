@@ -1,3 +1,4 @@
-    link/ether 00:00:5e:00:53:01 brd ff:ff:ff:ff:ff:ff link-netns bridge
-    link/ether 00:00:5e:00:53:02 brd ff:ff:ff:ff:ff:ff link-netns bridge
-    link/ether 00:00:5e:00:53:03 brd ff:ff:ff:ff:ff:ff link-netns bridge
+11: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+18: ns1-br0@if19: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+20: ns2-br0@if21: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+22: ns3-br0@if23: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
