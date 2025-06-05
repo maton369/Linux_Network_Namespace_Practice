@@ -8,4 +8,6 @@
 
 # grep 127.0.0.1 /etc/hosts | tee output.log
 
-dig +short @8.8.8.8 example.org A | tee output.log
+# dig +short @8.8.8.8 example.org A | tee output.log
+
+ip --all netns delete
