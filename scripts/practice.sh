@@ -53,4 +53,6 @@
 # ip netns exec ns1 ping -c 3 192.0.2.2 -I 192.0.2.1 | tee output.log
 # ip netns exec ns1 ping -c 3 192.0.2.3 -I 192.0.2.1 | tee -a output.log
 
-ip netns exec ns2 ping 192.0.2.1 -I 192.0.2.2 | tee output.log
+# ip netns exec ns2 ping 192.0.2.1 -I 192.0.2.2 | tee output.log
+
+ip netns exec bridge bridge fdb show br br0 | grep -i "00:00:5E" | tee output.log
