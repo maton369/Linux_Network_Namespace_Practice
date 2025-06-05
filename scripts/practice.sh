@@ -16,5 +16,9 @@
 # ip netns add client
 # ip netns show | tee output.log
 
-ip link add s-veth0 type veth peer name c-veth0
+# ip link add s-veth0 type veth peer name c-veth0
+# ip link show | grep veth | tee output.log
+
+ip link set s-veth0 netns server
+ip link set c-veth0 netns client
 ip link show | grep veth | tee output.log
