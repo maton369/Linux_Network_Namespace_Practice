@@ -10,4 +10,8 @@
 
 # dig +short @8.8.8.8 example.org A | tee output.log
 
-ip --all netns delete
+# ip --all netns delete
+
+ip netns add server
+ip netns add client
+ip netns show | tee output.log
