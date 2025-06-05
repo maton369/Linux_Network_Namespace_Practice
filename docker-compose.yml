@@ -7,4 +7,5 @@ services:
     tty: true
     volumes:
       - ./scripts:/scripts
+      - ./tmp/http-home:/tmp/http-home
     command: bash   
