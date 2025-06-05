@@ -50,5 +50,7 @@
 # ip netns exec bridge ip link set ns3-br0 master br0
 # ip netns exec bridge ip link show | grep master | tee output.log
 
-ip netns exec ns1 ping -c 3 192.0.2.2 -I 192.0.2.1 | tee output.log
-ip netns exec ns1 ping -c 3 192.0.2.3 -I 192.0.2.1 | tee -a output.log
+# ip netns exec ns1 ping -c 3 192.0.2.2 -I 192.0.2.1 | tee output.log
+# ip netns exec ns1 ping -c 3 192.0.2.3 -I 192.0.2.1 | tee -a output.log
+
+ip netns exec ns2 ping 192.0.2.1 -I 192.0.2.2 | tee output.log
