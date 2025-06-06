@@ -37,4 +37,6 @@
 #   --no-resolv \
 #   --no-daemon
 
-ip netns exec client dhclient -d c-veth0 | tee output.log
+# ip netns exec client dhclient -d c-veth0 | tee output.log
+
+ip netns exec client ip address show | grep "inet" | tee output.log
