@@ -9,3 +9,4 @@ target     prot opt source               destination
 
 Chain POSTROUTING (policy ACCEPT)
 target     prot opt source               destination         
+MASQUERADE  all  --  192.0.2.0/24         anywhere            

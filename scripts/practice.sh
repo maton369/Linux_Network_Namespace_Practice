@@ -31,4 +31,11 @@
 # ip netns exec router ip addr show gw-veth1 | tee -a output.log
 # ip netns exec wan ip addr show wan-veth0 | tee -a output.log
 
+# ip netns exec router iptables -t nat -L | tee output.log
+
+ip netns exec router iptables -t nat \
+    -A POSTROUTING \
+    -s 192.0.2.0/24 \
+    -o gw-veth1 \
+    -j MASQUERADE
 ip netns exec router iptables -t nat -L | tee output.log
