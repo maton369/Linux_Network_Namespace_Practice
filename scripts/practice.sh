@@ -42,7 +42,7 @@
 #     -j MASQUERADE
 # ip netns exec router iptables -t nat -L | tee output.log
 
-ip netns exec lan ping 203.0.113.1 | tee output.log
+# ip netns exec lan ping 203.0.113.1 | tee output.log
 # ip netns exec lan tcpdump -tnl -i lan-veth0 icmp | tee output.log
-# ip netns exec wan tcpdump -tnl -i wan-veth0 icmp | tee -a output.log
+ip netns exec wan tcpdump -tnl -i wan-veth0 icmp | tee -a output.log
 
