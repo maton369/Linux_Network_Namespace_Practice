@@ -15,8 +15,19 @@
 # ip link set wan-veth0 netns wan
 # ip netns exec lan ip link show | tee output.log
 
-ip netns exec lan ip link set lan-veth0 up
-ip netns exec router ip link set gw-veth0 up
-ip netns exec router ip link set gw-veth1 up
-ip netns exec wan ip link set wan-veth0 up
-ip netns exec lan ip link show lan-veth0 | grep state | tee output.log
+# ip netns exec lan ip link set lan-veth0 up
+# ip netns exec router ip link set gw-veth0 up
+# ip netns exec router ip link set gw-veth1 up
+# ip netns exec wan ip link set wan-veth0 up
+# ip netns exec lan ip link show lan-veth0 | grep state | tee output.log
+
+ip netns exec router ip address add 192.0.2.254/24 dev gw-veth0
+ip netns exec wan ip address add 203.0.113.254/24 dev gw-veth1
+ip netns exec lan ip address add 192.0.2.1/24 dev lan-veth0
+ip netns exec lan ip route add default via 192.0.2.254
+ip netns exec wan ip address add 203.0.113.1/24 dev wan-veth0
+ip netns exec lan ip addr show lan-veth0 | tee output.log
+ip netns exec router ip addr show gw-veth0 | tee -a output.log
+ip netns exec router ip addr show gw-veth1 | tee -a output.log
+ip netns exec wan ip addr show wan-veth0 | tee -a output.log
+
