@@ -30,9 +30,11 @@
 # ip netns exec server ip address add 192.0.2.254/24 dev s-veth0
 # ip netns show | grep veth | tee output.log
 
-ip netns exec server dnsmasq \
-  --dhcp-range=192.0.2.100,192.0.2.200,255.255.255.0 \
-  --interface=s-veth0 \
-  --port 0 \
-  --no-resolv \
-  --no-daemon
+# ip netns exec server dnsmasq \
+#   --dhcp-range=192.0.2.100,192.0.2.200,255.255.255.0 \
+#   --interface=s-veth0 \
+#   --port 0 \
+#   --no-resolv \
+#   --no-daemon
+
+ip netns exec client dhclient -d c-veth0 | tee output.log
