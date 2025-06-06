@@ -1,12 +1,86 @@
-Chain PREROUTING (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain INPUT (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain OUTPUT (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain POSTROUTING (policy ACCEPT)
-target     prot opt source               destination         
-MASQUERADE  all  --  192.0.2.0/24         anywhere            
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 53, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 54, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 55, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 56, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 57, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 58, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 59, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 60, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 61, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 62, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 63, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 64, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 65, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 66, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 67, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 68, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 69, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 70, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 71, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 72, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 73, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 74, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 75, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 76, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 77, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 78, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 79, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 80, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 81, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 82, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 83, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 84, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 85, length 64
+IP 192.0.2.254 > 192.0.2.1: ICMP net 203.0.113.1 unreachable, length 92
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 86, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 87, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 88, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 89, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 90, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 91, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 92, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 93, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 94, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 95, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 96, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 97, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 98, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 99, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 100, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 101, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 102, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 103, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 104, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 105, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 106, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 107, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 108, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 109, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 110, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 111, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 112, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 113, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 114, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 115, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 116, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 117, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 118, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 119, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 120, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 121, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 122, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 123, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 124, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 125, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 126, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 127, length 64
+IP 192.0.2.254 > 192.0.2.1: ICMP net 203.0.113.1 unreachable, length 92
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 128, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 129, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 130, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 131, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 132, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 133, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 134, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 135, length 64
+IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36375, seq 136, length 64

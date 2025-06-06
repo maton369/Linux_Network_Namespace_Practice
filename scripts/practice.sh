@@ -26,6 +26,8 @@
 # ip netns exec lan ip address add 192.0.2.1/24 dev lan-veth0
 # ip netns exec lan ip route add default via 192.0.2.254
 # ip netns exec wan ip address add 203.0.113.1/24 dev wan-veth0
+ip netns exec wan ip route add 192.0.2.0/24 via 203.0.113.254
+ip netns exec router sysctl -w net.ipv4.ip_forward=1
 # ip netns exec lan ip addr show lan-veth0 | tee output.log
 # ip netns exec router ip addr show gw-veth0 | tee -a output.log
 # ip netns exec router ip addr show gw-veth1 | tee -a output.log
@@ -33,9 +35,13 @@
 
 # ip netns exec router iptables -t nat -L | tee output.log
 
-ip netns exec router iptables -t nat \
-    -A POSTROUTING \
-    -s 192.0.2.0/24 \
-    -o gw-veth1 \
-    -j MASQUERADE
-ip netns exec router iptables -t nat -L | tee output.log
+# ip netns exec router iptables -t nat \
+#     -A POSTROUTING \
+#     -s 192.0.2.0/24 \
+#     -o gw-veth1 \
+#     -j MASQUERADE
+# ip netns exec router iptables -t nat -L | tee output.log
+
+# ip netns exec lan ping 203.0.113.1
+# ip netns exec lan tcpdump -tnl -i lan-veth0 icmp | tee output.log
+# ip netns exec wan tcpdump -tnl -i wan-veth0 icmp | tee -a output.log
