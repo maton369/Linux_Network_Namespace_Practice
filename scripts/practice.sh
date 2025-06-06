@@ -23,6 +23,9 @@
 # ip link set c-veth0 netns client
 # ip link show | grep veth | tee output.log
 
-ip netns exec server ip link set s-veth0 up
-ip netns exec client ip link set c-veth0 up
+# ip netns exec server ip link set s-veth0 up
+# ip netns exec client ip link set c-veth0 up
+# ip netns show | grep veth | tee output.log
+
+ip netns exec server ip address add 192.0.2.254/24 dev s-veth0
 ip netns show | grep veth | tee output.log
