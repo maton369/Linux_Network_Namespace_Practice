@@ -41,4 +41,6 @@
 
 # ip netns exec client ip address show | grep "inet" | tee output.log
 
-ip netns exec client ip route show | tee output.log
+# ip netns exec client ip route show | tee output.log
+
+ip --all netns delete
