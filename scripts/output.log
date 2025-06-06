@@ -1,2 +1,2 @@
-    inet 192.0.2.199/24 brd 192.0.2.255 scope global dynamic c-veth0
-    inet6 fe80::6425:89ff:fef4:3dd0/64 scope link 
+default via 192.0.2.254 dev c-veth0 
+192.0.2.0/24 dev c-veth0 proto kernel scope link src 192.0.2.199 
