@@ -1,63 +1,13 @@
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 9, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 9, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 10, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 10, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 11, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 11, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 12, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 12, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 13, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 13, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 14, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 14, length 664IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, s64 bytes from 203.0.113.1: icmp_seq=16 ttl=63 time=0.098 ms
-64 bytes from 203.0.113.1: icmp_seq=17 ttl=63 time=0.159 ms
-64 bytes from 203.0.113.1: icmp_seq=18 ttl=63 time=0.136 ms
-64 bytes from 203.0.113.1: icmp_seq=19 ttl=63 time=0.408 ms
-64 bytes from 203.0.113.1: icmp_seq=20 ttl=63 time=0.141 ms
-64 bytes from 203.0.113.1: icmp_seq=21 ttl=63 time=0.152 ms
-64 bytes from 203.0.113.1: icmp_seq=22 ttl=63 time=0.272 ms
-64 bytes from 203.0.113.1: icmp_seq=23 ttl=63 time=0.218 ms
-64 bytes from 203.0.113.1: icmp_seq=24 ttl=63 time=0.145 ms
-64 bytes from 203.0.113.1: icmp_seq=25 ttl=63 time=0.147 ms
-64 bytes from 203.0.113.1: icmp_seq=26 ttl=63 time=0.134 ms
-64 bytes from 203.0.113.1: icmp_seq=27 ttl=63 time=0.204 ms
-64 bytes from 203.0.113.1: icmp_seq=28 ttl=63 time=0.100 ms
-64 bytes from 203.0.113.1: icmp_seq=29 ttl=63 time=0.081 ms
-64 bytes from 203.0.113.1: icmp_seq=30 ttl=63 time=0.381 ms
-64 bytes from 203.0.113.1: icmp_seq=31 ttl=63 time=0.069 ms
-64 bytes from 203.0.113.1: icmp_seq=32 ttl=63 time=0.159 ms
-64 bytes from 203.0.113.1: icmp_seq=33 ttl=63 time=0.135 ms
-64 bytes from 203.0.113.1: icmp_seq=34 ttl=63 time=0.132 ms
-64 bytes from 203.0.113.1: icmp_seq=35 ttl=63 time=0.140 ms
-64 bytes from 203.0.113.1: icmp_seq=36 ttl=63 time=0.127 ms
-64 bytes from 203.0.113.1: icmp_seq=37 ttl=63 time=0.069 ms
-64 bytes from 203.0.113.1: icmp_seq=38 ttl=63 time=0.105 ms
-64 bytes from 203.0.113.1: icmp_seq=39 ttl=63 time=0.084 ms
-64 bytes from 203.0.113.1: icmp_seq=40 ttl=63 time=0.295 ms
-203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 25, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 26, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 26, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 27, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 27, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 28, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 28, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 29, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 29, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 30, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 30, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 31, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 31, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 32, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 32, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 33, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 33, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 34, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 34, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 35, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 35, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 36, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 36, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 37, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 37, length 64
-IP 192.0.2.1 > 203.0.113.1: ICMP echo request, id 36604, seq 38, length 64
-IP 203.0.113.1 > 192.0.2.1: ICMP echo reply, id 36604, seq 38, length 64
+Chain PREROUTING (policy ACCEPT)
+target     prot opt source               destination         
+DNAT       tcp  --  anywhere             203.0.113.254        tcp dpt:54321 to:192.0.2.1
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain POSTROUTING (policy ACCEPT)
+target     prot opt source               destination         
+MASQUERADE  all  --  192.0.2.0/24         anywhere            
