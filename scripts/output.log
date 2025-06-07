@@ -1,13 +1,1 @@
-Chain PREROUTING (policy ACCEPT)
-target     prot opt source               destination         
-DNAT       tcp  --  anywhere             203.0.113.254        tcp dpt:54321 to:192.0.2.1
-
-Chain INPUT (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain OUTPUT (policy ACCEPT)
-target     prot opt source               destination         
-
-Chain POSTROUTING (policy ACCEPT)
-target     prot opt source               destination         
-MASQUERADE  all  --  192.0.2.0/24         anywhere            
+Hello, World!

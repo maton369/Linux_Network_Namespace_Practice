@@ -46,11 +46,15 @@
 # ip netns exec lan tcpdump -tnl -i lan-veth0 icmp | tee output.log
 # ip netns exec wan tcpdump -tnl -i wan-veth0 icmp | tee -a output.log
 
-ip netns exec router iptables -t nat \
-    -A PREROUTING \
-    -p tcp \
-    --dport 54321 \
-    -d 203.0.113.254 \
-    -j DNAT \
-    --to-destination 192.0.2.1
-ip netns exec router iptables -t nat -L | tee output.log
+# ip netns exec router iptables -t nat \
+#     -A PREROUTING \
+#     -p tcp \
+#     --dport 54321 \
+#     -d 203.0.113.254 \
+#     -j DNAT \
+#     --to-destination 192.0.2.1
+# ip netns exec router iptables -t nat -L | tee output.log
+
+# ip netns exec lan nc -lnv 54321 | tee output.log
+# ip netns exec wan nc 203.0.113.254 54321
+ip netns exec wan tcpdump -tnl -i wan-veth0 "tcp and port 54321"
